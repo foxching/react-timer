@@ -8,7 +8,7 @@ const Nav = () => {
         <ul className="menu">
           <li className="menu-text">React Timer App</li>
           <li>
-            <NavLink to="/timer" activeClassName="active-link">
+            <NavLink to="/" activeClassName="active-link">
               Timer
             </NavLink>
           </li>
