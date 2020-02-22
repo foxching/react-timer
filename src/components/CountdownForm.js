@@ -7,7 +7,7 @@ const CountdownForm = props => {
     e.preventDefault();
     let strSeconds1 = strSeconds.current.value;
 
-    if (strSeconds1.match(/^[0-9]*$/)) {
+    if (strSeconds1.match(/^[0-9]*$/) && strSeconds1 !== "") {
       strSeconds.current.value = "";
       props.onSetCountdown(parseInt(strSeconds1, 10));
     }
