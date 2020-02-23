@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Timer from "../components/Timer";
-import Countdown from "../components/Countdown";
+import Timer from "./Timer";
+import Countdown from "./Countdown";
 import "../styles/app.scss";
 
 export default function App() {

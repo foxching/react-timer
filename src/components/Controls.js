@@ -1,6 +1,6 @@
 import React from "react";
 
-const Controls = ({ countdownStatus, onStatusChange }) => {
+const Controls = ({ status, onStatusChange }) => {
   const onControlStatusChange = newStatus => {
     return () => {
       onStatusChange(newStatus);
@@ -8,7 +8,7 @@ const Controls = ({ countdownStatus, onStatusChange }) => {
   };
 
   const renderStartStopButton = () => {
-    if (countdownStatus === "started") {
+    if (status === "started") {
       return (
         <button
           className="button secondary"
