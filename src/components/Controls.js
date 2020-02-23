@@ -17,7 +17,7 @@ const Controls = ({ countdownStatus, onStatusChange }) => {
           Pause
         </button>
       );
-    } else if (countdownStatus === "paused") {
+    } else {
       return (
         <button
           className="button primary"
