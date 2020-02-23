@@ -20,6 +20,9 @@ const Countdown = () => {
       interval = setInterval(() => {
         let newCount = count - 1;
         setCount(() => (newCount >= 0 ? newCount : 0));
+        if (newCount === 0) {
+          setCountdownStatus("stopped");
+        }
       }, 1000);
     } else if (countdownStatus === "stopped") {
       setCount(0);
@@ -49,6 +52,7 @@ const Countdown = () => {
 
   return (
     <Main>
+      <h1 className="page-title">Countdown App</h1>
       <Clock totalSeconds={count} />
       {renderControlArea()}
     </Main>
