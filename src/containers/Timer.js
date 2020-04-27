@@ -15,6 +15,8 @@ const Timer = () => {
         let newCount = count + 1;
         setCount(() => (newCount >= 0 ? newCount : 0));
       }, 1000);
+    } else if (timerStatus === "stopped") {
+      setCount(0);
     } else {
       clearInterval(interval);
     }
