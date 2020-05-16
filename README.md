@@ -1,6 +1,6 @@
 <h1 align='center'>React Timer App</h1>
 
-<h3 align='center'> :time : A simple timer in reactjs.</h3>
+<h3 align='center'>  A simple timer in reactjs.</h3>
 
 
 ### Screenshot
